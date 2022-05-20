@@ -55,6 +55,34 @@
     }
 }
 
+.footer_datetime {
+    margin-right: 17px;
+    cursor: pointer;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.footer__time {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $title-color;
+}
+
+.footer__addres {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $title-color;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+
 .footer__link {
     position: relative;
     font-weight: 500;
