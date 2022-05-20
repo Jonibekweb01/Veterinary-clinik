@@ -1,0 +1,36 @@
+  @font-face {
+     font-family: 'Futura PT';
+     font-style: normal;
+     font-weight: 400;
+     src: local(''),
+          url('../fonts/FuturaPT-Book.woff2') format('woff2'), 
+          url('../fonts/FuturaPT-Book.woff') format('woff');  
+   }
+
+   @font-face {
+     font-family: 'Futura PT';
+     font-style: normal;
+     font-weight: 500;
+     src: local(''),
+          url('../fonts/FuturaPT-Medium.woff2') format('woff2'), 
+          url('../fonts/FuturaPT-Medium.woff') format('woff');  
+   }
+
+  /* livvic-600 - latin */
+  @font-face {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/FuturaPT-Light.woff2') format('woff2'), 
+         url('../fonts/FuturaPT-Light.woff') format('woff');  
+  }
+  /* livvic-700 - latin */
+  @font-face {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/FuturaPT-Bold.woff2') format('woff2'),
+         url('../fonts/FuturaPT-Bold.woff') format('woff');  
+  }

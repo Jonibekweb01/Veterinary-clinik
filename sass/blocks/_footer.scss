@@ -1,0 +1,176 @@
+.footer {
+    padding: 54px 0 23px 0;
+    background-color: #F3F3F3;
+    border: 1px solid #EBEBEB;
+    
+}
+
+.footer__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 0 28px 0;
+}
+
+.footer__logo {
+    margin-right: 67px;
+    
+    
+    &:hover {
+        opacity: 0.8;
+    } 
+    &:active {
+        opacity: 0.6;
+    } 
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    width: 288px;
+    margin-right: 126px;
+}
+
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    @include list-global;
+    margin-right: 87px;
+}
+
+.footer__lists {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    @include list-global;
+    margin-right: 0;
+}
+
+.footer__item {
+    margin-bottom: 14px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: $title-color;
+    text-decoration: none;
+    z-index: 9;
+    
+    &::before {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 3px;
+        z-index: -1;
+        width: 100%;
+        height: 0;
+        transition: 0.2s;
+        background-color: #E4EEA2;
+        content: '';
+    }
+    
+    &:hover::before {
+        height: 25%;
+    }
+    
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+.footer__lastlist {
+    display: flex;
+    align-items: flex-start;
+    @include list-global;
+}
+
+.footer__lastitem {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    margin-right: 84px;
+    width: 140px;
+    
+    &:nth-child(2) {
+        flex-direction: row;
+    }
+    &::before {
+        position: absolute;
+        top: 1px;
+        left: -20px;
+        display: block;
+        background-image: url('../../images/logo-dates.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 13px;
+        height: 13px;
+        content: '';
+    }
+    
+    &:nth-child(2)::before {
+        position: absolute;
+        top: 1px;
+        left: -20px;
+        display: block;
+        background-image: url('../images/logo-home.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 14px;
+        height: 13px;
+        content: '';
+    }
+    
+    
+    &:nth-child(3)::before {
+        position: absolute;
+        top: 1px;
+        left: -20px;
+        display: block;
+        background-image: url('../../images/logo-phone.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 13px;
+        height: 13px;
+        content: '';
+    }
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.footer__lastphone {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    color: $title-color;
+    margin-bottom: 4px;
+    transition: 0.2s ease;
+    
+    &:hover {
+        color: $hover-title;
+    }
+    
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+
+.footer__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5c5c5c;
+    text-align: right;
+}

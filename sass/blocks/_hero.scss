@@ -1,0 +1,54 @@
+.hero {
+    padding: 153px 0 238px 0;
+    background-image: url('../images/hero-bg.png'), url("../../images/parrot.png");
+    background-repeat: no-repeat;
+    background-size: 870px 835px, 350px 430px;
+    background-position: calc(50% - 530px) calc(50% - 120px),calc(50% - -675px) calc(50% - -170px);
+}
+
+.hero__inner {
+    margin-right: 33px;
+    margin-left: auto;
+    width: 605px;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 29px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;
+}
+
+.hero__strong {
+    color: #78C0DE;
+}
+
+.hero__text {
+    margin-top: 0;
+    margin-bottom: 38px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #949494;
+}
+
+.hero__link {
+    padding: 15px 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: $main-color;
+    text-decoration: none;
+    background: $title-color;
+    border-radius: 3px;
+    transition: 0.2s ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+}

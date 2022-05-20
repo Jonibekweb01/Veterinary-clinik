@@ -1,0 +1,77 @@
+.box {
+    position: relative;
+    margin-bottom: 151px;
+    background-image: url("../images/box-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    
+    &::after {
+        display: block;
+        position: absolute;
+        top: calc(50% - 272px);
+        left: calc(50% + 62px);
+        background-image: url('../images/box-dog.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 613px;
+        height: 481px;
+        content: '';
+    }
+}
+
+.box__inner {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;    
+    padding: 90px 0 88px 250px;
+}
+
+.box__title {
+    margin: 0 0 32px 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 20px;
+    color: $main-color;
+}
+
+.box__form {
+    display: flex;
+    align-items: center;
+}
+
+.box__input {
+    width: 335px;
+    margin-right: 21px;
+    padding: 18px 22px;
+    border-radius: 5px;
+    background-color: $main-color;
+    border: none;
+    outline: none;
+    
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #949494;
+    }
+}
+
+.box__btn {
+    padding: 18px 53px;
+    background-color: $title-color;
+    color: $main-color;
+    border-radius: 3px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    
+    &:hover {
+        opacity: 0.8;
+    }
+    
+    &:active {
+        opacity: 0.6;
+    }
+}
